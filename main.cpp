@@ -1,13 +1,13 @@
-#include<iostream>
-using namespace std;
-int main()
-{
+#include<iostream>//incluir libreria de comandos
+using namespace std;//uso de diversos comandos
+int main()//Inicializacion del programa
+{//Apertura del programa
   int X; //variable entera X
   cout<<"Ingrese un numero del 0 al 999"<<endl; //Ingresar un numero del 0 al 999
   cin>>X; //Lectura de la variable X
   if((X<0)||(X>999)) cout<<"Error de valor ingresado\n";//Si el valor es menor a 0 o mayor a 999, me envia un mensaje de error 
   else //sino se ejecuta la funcionan anterior se hace lo siguiente
-  {
+  {//Apertura de de la condición
     if(X==0)       {cout<<"cero";}//si es igual a cero, se imprime cero
     if(X>=900)     {cout<<"novecientos ";X=X-900;}//si es igual o mayor a novecientos, se imprime novecientos y se resta novecientos para que no se repita.
     else if(X>=800){cout<<"ochocientos ";X=X-800;}//si es igual o mayor a ochocientos, se imprime ochocientos y se resta ochocientos para que no se repita.
@@ -51,7 +51,7 @@ int main()
     else if(X==3)     {cout<<"tres";X=X-3;}//si es igual a tres, se imprime tres y se resta tres para que no se repita.
     else if(X==2)     {cout<<"dos";X=X-2;}//si es igual a dos, se imprime dos y se resta dos para que no se repita.
     else if(X==1)     {cout<<"uno";X=X-1;}//si es igual a uno, se imprime uno y se resta uno para que no se repita.
-  }
-cout<<endl;
-return 0;
-}
+  }//Finaliza la apertura del comando
+cout<<endl;//Finalización de la impresion de las diferentes condiciones.
+return 0;//Returna a la linea 0 del programa en función.
+}//Finaliza la ejecución del programa.
